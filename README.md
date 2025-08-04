@@ -12,6 +12,8 @@ Yahml（ヤームル）は、YAML形式でHTML構造を定義し、静的なHTML
 ## 使い方
 1. /style/fonts.cssにフォント設定を書く。
     - このとき、--subset-sourceを記入する。ここで記入したフォントはfontsフォルダから参照される。
-2. index.yamlを書く。tag,　parentつまり、設置する親要素を指定する。
+2. index.yamlを書く。tag,　parentつまり、設置する親要素を指定する。headなどのほか、#containerなどのID要素も指定できる。また、htmlそのものの場合rootを指定する。pagesフォルダにindex.yaml以外のページを作成する。
+3. generate_html.pyを実行する。distフォルダにhtmlが生成される。
+4. preview.pyを実行するとブラウザで開くことができる。
 
 
