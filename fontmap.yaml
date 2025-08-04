@@ -3,9 +3,9 @@ font_body:
   output: font_body.woff2
 
 font_display:
-  source: ShipporiMinchoB1-Regular.ttf
+  source: ZenAntique-Regular.ttf
   output: font_display.woff2
 
 font_code:
-  source: JetBrainsMono-Regular.ttf
+  source: NotoSansJP-ExtraBold.ttf
   output: font_code.woff2
