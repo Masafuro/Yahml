@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 from subpython.asset_copy import copy_local_assets
+from pathlib import Path
+from subpython.subset_fonts import run_subset_fonts
 
 import os
 import sys
@@ -152,6 +154,13 @@ def main():
     out_path = outdir / "index.html"
     out_path.write_text(html_text, encoding="utf-8")
     print(f"出力しました: {out_path}")
+
+    # subset_font
+    try:
+        run_subset_fonts(css_path="./style/fonts.css", index_yaml=str(yaml_path), dist_dir=str(outdir), fonts_source_dir=".")
+        print("サブセットフォントを作成")
+    except Exception as e:
+        print(f"サブセット生成でエラーが出ました: {e}", file=sys.stderr)
 
 
 if __name__ == "__main__":

@@ -14,7 +14,7 @@
 
 - tag: link
   rel: stylesheet
-  href: "./style/style.css"
+  href: "./style/fonts.css"
   parent: head
 
 - tag: body
