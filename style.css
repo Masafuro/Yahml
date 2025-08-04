@@ -1,0 +1,47 @@
+/* ---- FONT DEFINITIONS ---- */
+@font-face {
+  font-family: 'font_body';
+  src: url('./fonts/font_body.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'font_display';
+  src: url('./fonts/font_display.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'font_code';
+  src: url('./fonts/font_code.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---- FONT CLASSES ---- */
+.font_body {
+  font-family: 'font_body', serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.font_display {
+  font-family: 'font_display', serif;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.font_code {
+  font-family: 'font_code', monospace;
+  font-size: 15px;
+  background-color: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
