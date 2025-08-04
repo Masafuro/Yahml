@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from asset_copy import copy_local_assets
+from subpython.asset_copy import copy_local_assets
 
 import os
 import sys
@@ -139,17 +139,14 @@ def main():
     outdir.mkdir(parents=True, exist_ok=True)
     out_path = outdir / "index.html"
     out_path.write_text(html_text, encoding="utf-8")
-    print(f"出力しました: {out_path}")
 
     # asset_copy
     indexed, children = build_tree(nodes)
-
     outdir = Path(args.outdir)
     outdir.mkdir(parents=True, exist_ok=True)
 
     # ローカル参照されているファイル（style.css など）をコピー
     copy_local_assets(nodes, yaml_path.parent, outdir)
-
     html_text = assemble_html(indexed, children)
 
     out_path = outdir / "index.html"

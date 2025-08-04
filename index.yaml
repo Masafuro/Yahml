@@ -14,7 +14,7 @@
 
 - tag: link
   rel: stylesheet
-  href: "./style.css"
+  href: "./style/style.css"
   parent: head
 
 - tag: body
