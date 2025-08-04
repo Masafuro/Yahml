@@ -1,0 +1,35 @@
+- tag: html
+  parent: root
+
+- tag: head
+  parent: html
+
+- tag: meta
+  charset: "UTF-8"
+  parent: head
+
+- tag: title
+  text: "Yahml サンプルページ"
+  parent: head
+
+- tag: body
+  parent: html
+
+- tag: h1
+  id: main-title
+  class: font_display
+  text: "ようこそ、Yahmlへ"
+  parent: body
+
+- tag: p
+  class: font_body
+  text: "このページはYAMLから自動生成されています。"
+  parent: body
+
+- tag: a
+  href: "https://github.com/Masafuro/Yahml"
+  target: "_blank"
+  rel: "noopener"
+  class: link font_body
+  text: "GitHubでプロジェクトを見る"
+  parent: body
