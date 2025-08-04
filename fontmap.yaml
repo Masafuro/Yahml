@@ -1,0 +1,3 @@
+font_body:
+  source: ZenOldMincho-Regular.ttf
+  output: font_body.woff2
