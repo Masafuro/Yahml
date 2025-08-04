@@ -12,6 +12,11 @@
   text: "Yahml サンプルページ"
   parent: head
 
+- tag: link
+  rel: stylesheet
+  href: "./style.css"
+  parent: head
+
 - tag: body
   parent: html
 
