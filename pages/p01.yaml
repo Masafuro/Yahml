@@ -14,7 +14,7 @@
 
 - tag: link
   rel: stylesheet
-  href: "./style/fonts.css"
+  href: "../style/fonts.css"
   parent: head
 
 - tag: body
@@ -28,7 +28,7 @@
 
 - tag: p
   class: font_body
-  text: "このページはYAMLから自動生成されています。"
+  text: "このページはYAMLから自動生成されています。p01.yamlです。"
   parent: body
 
 - tag: a
@@ -37,12 +37,4 @@
   rel: "noopener"
   class: link font_body
   text: "GitHubでプロジェクトを見る"
-  parent: body
-
-- tag: a
-  href: "./pages/p01.html"
-  target: "_blank"
-  rel: "noopener"
-  class: link font_body
-  text: "P01へジャンプ"
   parent: body

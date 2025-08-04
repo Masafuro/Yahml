@@ -1,7 +1,7 @@
 /* ==== FONT DEFINITIONS ==== */
 @font-face {
   font-family: 'font_body';
-   --subset-source: './fonts/ZenOldMincho-Regular.ttf';
+   --subset-source: './ZenOldMincho-Regular.ttf';
   src: url('../fonts/font_body.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'font_display';
-  --subset-source: './fonts/ZenAntique-Regular.ttf';
+  --subset-source: './ZenAntique-Regular.ttf';
   src: url('../fonts/font_display.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
