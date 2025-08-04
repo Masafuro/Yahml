@@ -9,32 +9,34 @@
   parent: head
 
 - tag: title
-  text: "Yahml サンプルページ"
+  text: "P01 ページ"
   parent: head
 
 - tag: link
   rel: stylesheet
-  href: "../style/fonts.css"
+  href: "./style/fonts.css"
   parent: head
 
 - tag: body
   parent: html
 
 - tag: h1
-  id: main-title
+  id: page-title
   class: font_display
-  text: "ようこそ、Yahmlへ"
+  text: "P01の見出し"
+  parent: body
+
+- tag: div
+  id: container
   parent: body
 
 - tag: p
   class: font_body
-  text: "このページはYAMLから自動生成されています。p01.yamlです。"
-  parent: body
+  text: "コンテナ内の段落です。"
+  parent: "#container"
 
 - tag: a
-  href: "https://github.com/Masafuro/Yahml"
-  target: "_blank"
-  rel: "noopener"
-  class: link font_body
-  text: "GitHubでプロジェクトを見る"
+  href: "../index.html"
+  class: "link font_body"
+  text: "トップページへ戻る"
   parent: body
