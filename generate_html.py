@@ -218,6 +218,9 @@ def process_single_yaml(yaml_path: Path, outdir: Path, yaml_to_output: dict):
         print(f"YAML 読み込みに失敗しました ({yaml_path}): {e}", file=sys.stderr)
         return
 
+    # templateの除去
+    nodes = [node for node in nodes if node.get("parent") != "template"]
+
     indexed, children = build_tree(nodes)
     html_text = assemble_html(indexed, children)
     html_text = fix_page_links(html_text, yaml_to_output, outdir)
