@@ -5,6 +5,7 @@ Yahml（ヤームル）は、YAML形式でHTML構造を定義し、静的なHTML
 ## 特徴
 
 - index.yaml : **YAMLでHTMLを書く**：構造・順序・属性を宣言的に定義可能
+    - アンカーを使う場合は、parent: templateとする。
 - generate_html.py : **静的サイト生成**：ビルドコマンドひとつで軽量なHTMLとフォントが完成
     - asset_copy.py : **参照アセットコピー** : distフォルダにアセットをコピー
     - subset_fonts.py：**フォント自動最適化**：CSSとテキストを解析してサブセットフォント（woff2）を生成
