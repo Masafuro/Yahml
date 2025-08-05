@@ -8,6 +8,7 @@ Yahml（ヤームル）は、YAML形式でHTML構造を定義し、静的なHTML
 - generate_html.py : **静的サイト生成**：ビルドコマンドひとつで軽量なHTMLとフォントが完成
     - asset_copy.py : **参照アセットコピー** : distフォルダにアセットをコピー
     - subset_fonts.py：**フォント自動最適化**：CSSとテキストを解析してサブセットフォント（woff2）を生成
+- analyze_tags.py : yamlファイルのparentによる構造を読み取ってmermaid記法の.mdファイルを作成。指定したファイルと同階層、同名の.mdとして出力される。
 
 ## 使い方
 1. /style/fonts.cssにフォント設定を書く。
