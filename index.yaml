@@ -1,8 +1,19 @@
+- &card_base
+  tag: div
+  class: card
+  id: card-1
+  parent: template
+
 - tag: html
   parent: root
+  data-theme: light
 
 - tag: head
   parent: html
+
+- tag: body
+  parent: html
+
 
 - tag: meta
   charset: "UTF-8"
@@ -12,13 +23,16 @@
   text: "Yahml サンプルページ"
   parent: head
 
+
 - tag: link
   rel: stylesheet
   href: "./style/fonts.css"
   parent: head
 
-- tag: body
-  parent: html
+- tag: link
+  rel: stylesheet
+  href: "./style/bulma.min.css"
+  parent: head
 
 - tag: h1
   id: main-title
@@ -46,3 +60,21 @@
   class: link font_body
   text: "P01へジャンプ"
   parent: body
+
+- <<: *card_base
+  id: card-2
+  parent: body
+
+- tag: p
+  class: font_body
+  text: "cardテンプレートによる差し込み"
+  parent: "#card-2"
+
+- <<: *card_base
+  id: card-3
+  parent: body
+
+- tag: p
+  class: font_body
+  text: "cardテンプレートによる差し込み"
+  parent: "#card-3"
