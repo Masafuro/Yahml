@@ -16,7 +16,7 @@ Yahml（ヤームル）は、YAML形式でHTML構造を定義し、静的なHTML
     - このとき、--subset-sourceを記入する。ここで記入したフォントはfontsフォルダから参照される。
 2. index.yamlを書く。tag,　parentつまり、設置する親要素を指定する。headなどのほか、#containerなどのID要素も指定できる。また、htmlそのものの場合rootを指定する。pagesフォルダにindex.yaml以外のページを作成する。
 3. generate_html.pyを実行する。distフォルダにhtmlが生成される。
-4. preview.pyを実行するとブラウザで開くことができる。
+4. preview.pyを実行するとdistのindex.htmlをデフォルトのブラウザで開くことができる。--serve オプションで開くとサーバーを立ててlocalhostから開く
 
 ## 開発進捗
 - 令和7年8月4日 : 開発完了
